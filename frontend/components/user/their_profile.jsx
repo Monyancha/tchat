@@ -52,6 +52,9 @@ class Profile extends React.Component {
                 <Link to={`/messaging`} id="profile-nav-buttons" onClick={!!this.props.user.hasThread? this.handleToMessaging: this.handleModal("newPost")}>
                   <span>Message</span>
                 </Link>
+                <Link to={`/messaging`} id="profile-nav-buttons" onClick={!!this.props.user.hasThread? this.handleToMessaging: this.handleModal("newPost")}>
+                  <span>Block</span>
+                </Link>
               </div>
             </div>
           </div>
